@@ -12,7 +12,7 @@ body {
 /* Nav Bar */
 
 .navbar {
-  background-color: #fdfaf5;
+  /* background-color: #fdfaf5; */
   padding: 15px 0;
 }
 
@@ -34,6 +34,7 @@ body {
 
 
 .nav li a {
+  font-size: 1.5rem;
   text-decoration: none;
   color: #575656;
   font-weight: 600;
@@ -63,7 +64,7 @@ body {
 
 
 .nav-group a:hover {
-  background-color: #d3cec5;
+  text-decoration: underline;
 }
 
 /* Hero Picture */
@@ -131,6 +132,9 @@ body {
   font-size: 1.8rem;
   margin-top: 5rem;
 }
+.section-div h2{
+  color: #575656;
+}
 .section-subtitle-p{
   max-width: 800px;
   margin: 0 auto;
@@ -140,6 +144,7 @@ body {
 .section-subtitle-p p{
   font-size: medium;
   line-height: 1.8;
+  color: #575656;
 }
 
 .section-subtitle {
@@ -258,7 +263,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  color: #333;
+  color: #2c3e3e;
   font-size: 20px;
 }
 
@@ -270,20 +275,14 @@ body {
 
 
 /* Testimonials */
+
 .testimonials {
-  background-color: #2e3a33;
-  color: white;
+  background-color: rgba(253, 250, 245, 0.95);
+  color: #2c3e3e;
   padding: 60px 20px;
   text-align: center;
 }
 
-.section-div {
-  margin-bottom: 40px;
-}
-.section-div h2 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-}
 .section-subtitle {
   font-size: 1rem;
   color: #d68b42;
@@ -296,6 +295,7 @@ body {
 .testimonial-content {
   max-width: 800px;
   margin: 0 auto 40px;
+  color: #2c3e3e;
   padding: 20px;
   border-radius: 10px;
   text-align: left;
@@ -365,14 +365,188 @@ body {
 }
 
 
+/* Amenities */
 
-
-
-
-footer {
+.section-div{
+  color:white;
   text-align: center;
-  padding: 20px;
-  background-color: #2F4137;
-  color: white;
-  margin-top: 40px;
+  font-size: 1.8rem;
+  margin-top: 5rem;
+}
+.amenities {
+  padding: 80px 0;
+  background: linear-gradient(to right, #b36b00, #653d00);
+  color: #fff;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px 30px;
+  max-width: 1200px;
+  width: 85%;
+  margin: 40px auto 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 40px 0;
+}
+
+.amenity-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.amenity-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.amenity-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+}
+
+.amenity-item p {
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Video */
+
+.videos {
+  background-color: #fdfaf5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.videos h2 {
+  font-size: 2rem;
+  color: #2c3e3e;
+  margin-bottom: 10px;
+}
+
+.main-video-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.mainVideo {
+  width: 60%;
+  max-height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-gallery video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #2c3e3e;
+  transition: transform 0.3s ease;
+}
+
+.video-gallery video:hover {
+  transform: scale(1.2);
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(to right, #b36b00, #653d00);
+}
+
+.footer__container{
+  display: grid;
+  gap: 4rem 2rem;
+}
+
+.footer__logo{
+  margin-bottom: 1rem;
+}
+
+.footer__col .footer__logo a{
+  color: #fdfaf5;;
+}
+
+.footer__col a{
+ color: #fdfaf5;
+ transition: 0.3s;
+}
+
+.footer__col a:hover{
+  color: #fdfaf5;
+}
+.footer__col p{
+  margin-bottom: 1rem;
+color: #fdfaf5;
+}
+
+.footer__socials{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer__socials a{
+  font-size: 1.5rem;
+}
+.footer__col h4{
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fdfaf5;
+}
+.footer__links{
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.footer__bar{
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #fdfaf5;
+  text-align: center;
+}
+
+@media (width >540px){
+
+  .footer__container{
+  grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (width >768px){
+
+  .footer__container{
+      grid-template-columns: repeat(4,1fr);
+      }
+}
+
+@media (width >1024px){
+  .service__grid{
+      gap: 1.2rem;
+  }
 }

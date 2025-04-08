@@ -12,3 +12,17 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 30,
   speed: 800
 })
+
+window.addEventListener('DOMContentLoaded', ()=>{
+  fetch('nav.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('nav-placeholder').innerHTML = data
+  });
+  fetch('footer.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('footer-placeholder').innerHTML = data;
+  });
+  console.log("JS loaded, attempting to inject nav and footer...");
+})

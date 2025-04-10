@@ -26,3 +26,22 @@ window.addEventListener('DOMContentLoaded', ()=>{
   });
   console.log("JS loaded, attempting to inject nav and footer...");
 })
+
+
+function openService(evt, serviceName) {
+  const tabcontents = document.querySelectorAll(".tabcontent");
+  tabcontents.forEach(content => content.classList.remove("show"));
+
+
+  const tablinks = document.querySelectorAll(".tablinks");
+  tablinks.forEach(link => link.classList.remove("active"));
+
+
+  document.getElementById(serviceName).classList.add("show");
+  evt.currentTarget.classList.add("active");
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("defaultOpen").click();
+});

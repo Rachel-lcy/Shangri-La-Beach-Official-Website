@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="nav">
+      <div class="nav-group">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+      </div>
+      <li class="logo-container">
+        <a href="/">
+          <img src="assets/logo.webp" alt="Logo" class="logo">
+        </a>
+      </li>
+      <div class="nav-group">
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="dinning.html">Dining</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <section class="hero spa">
+    <div class="hero-overlay spa-overlay">
+      <h1>Spa Services & Price List</h1>
+      <p>Let your stress melt away. At Shangri-La Spa, we offer soothing experiences crafted to nurture your well-being and refresh your spirit. </p>
+    </div>
+  </section>
+
+  <section class="spa-tabs">
+
+    <div class="tab-container">
+      <div class="tab">
+        <button class="tablinks" onclick="openService(event, 'Massages')" id="defaultOpen">Massages</button>
+        <button class="tablinks" onclick="openService(event, 'Facials')">Facials</button>
+        <button class="tablinks" onclick="openService(event, 'Body')">Body Treatments</button>
+        <button class="tablinks" onclick="openService(event, 'Nails')">Manicures & Pedicures</button>
+        <button class="tablinks" onclick="openService(event, 'Enhancements')">Enhancements</button>
+        <button class="tablinks" onclick="openService(event, 'Wellness')">Wellness Programs</button>
+        <button class="tablinks" onclick="openService(event, 'Notes')">Important Notes</button>
+      </div>
+      <div class="tab-content-area">
+        <div id="Massages" class="tabcontent">
+          <h3>Massages</h3>
+          <p>Shangri La Signature Massage (90 min): $250 – A customized blend for deep relaxation.</p>
+          <small>A customized massage using a blend of techniques to release tension and promote deep relaxation.</small>
+          <p>Deep Tissue (60/90 min): $180 / $260 – For chronic tension and pain.</p>
+          <small>A customized massage using a blend of techniques to release tension and promote deep relaxation.</small>
+          <p>Hot Stone (75 min): $220 – Warm basalt stones soothe and improve circulation.</p>
+          <p>...（你可以继续补充更多）</p>
+        </div>
+  
+        <div id="Facials" class="tabcontent">
+          <h3>Facials</h3>
+          <p>Radiance Facial (75 min): $210 – Tailored to your skin type, glow guaranteed.</p>
+          <p>Hydrating Facial (60 min): $180 – Deep nourishment and moisture boost.</p>
+          <p>...（更多内容）</p>
+        </div>
+  
+        <div id="Body" class="tabcontent">
+          <h3>Body Treatments</h3>
+          <p>Sea Salt Scrub (45 min): $150 – Exfoliates and refreshes skin.</p>
+          <p>Tropical Wrap (60 min): $200 – Deep hydration with natural ingredients.</p>
+          <p>...（更多内容）</p>
+        </div>
+  
+        <div id="Nails" class="tabcontent">
+          <h3>Manicures & Pedicures</h3>
+          <p>Deluxe Manicure: $90 | Classic Pedicure: $90</p>
+        </div>
+  
+        <div id="Enhancements" class="tabcontent">
+          <h3>Enhancements</h3>
+          <p>Scalp Massage (15 min): $40 | Eye Treatment: $35 | Reflexology: $40</p>
+        </div>
+  
+        <div id="Wellness" class="tabcontent">
+          <h3>Wellness Programs</h3>
+          <p>Yoga (Group): $50 | Private: $120<br>Meditation: $40 (Group) / $100 (Private)</p>
+        </div>
+  
+        <div id="Notes" class="tabcontent">
+          <h3>Important Notes</h3>
+          <ul>
+            <li>Please arrive 15 minutes early.</li>
+            <li>24-hour cancellation policy applies.</li>
+            <li>Gratuity not included.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+<footer class="footer">
+  <div class="section__container footer__container">
+      <div class="footer__col">
+          <div class="logo footer__logo">
+              <a href="#home"><img src="assets/logo-white.svg" alt="White Logo" width="180" height="100"></a>
+              <p>
+                Discover a world of endless possibilities as we curate the best in travel, from hidden gems to iconic landmarks.
+            </p>
+          </div>
+          
+          <div class="footer__socials">
+              <a href="https://github.com/Rachel-lcy"><i class="ri-facebook-fill"></i></a>
+              <a href="https://github.com/Rachel-lcy"><i class="ri-twitter-fill"></i></a>
+              <a href="https://github.com/Rachel-lcy"><i class="ri-instagram-fill"></i></a>
+              <a href="https://github.com/Rachel-lcy"><i class="ri-github-fill"></i></a>
+              <a href="https://www.linkedin.com/in/rui-hu-728b212aa/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+      </div>
+      <div class="footer__col">
+          <h4>Quick links</h4>
+          <ul class="footer__links">
+              <li><a href="#">Explore Destinations</a></li>
+              <li><a href="#">Exclusive Offers</a></li>
+              <li><a href="#">Travel Tips & Guides</a></li>
+              <li><a href="#">Book Your Adventure</a></li>
+              <li><a href="#">Join our Community</a></li>
+          </ul>
+      </div>
+
+      <div class="footer__col">
+          <h4>Company</h4>
+          <ul class="footer__links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+          </ul>
+      </div>
+
+      <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+              <li><a href="#">Customer Support</a></li>
+              <li><a href="#">Business Inquiries</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer__bar">
+    Copyright © 2025 Shangri-La-Website. All rights reserved.
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

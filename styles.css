@@ -557,7 +557,24 @@ color: #fdfaf5;
   font-family: "Segoe UI", sans-serif;
   color: #2c3e3e;
 }
+.activity-topbar {
+  height: 500px;
+  background-image: url('../assets/activities/beach-swing.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
 
+.activity-topbar-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
 .activities h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -816,5 +833,21 @@ color: #fdfaf5;
 }
 
 .tabcontent.show {
-  display: block;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.massage-content {
+  flex: 1;
+}
+.massage-price {
+  flex: 1;
+}
+
+.massage-price img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #f6f6f6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
 }

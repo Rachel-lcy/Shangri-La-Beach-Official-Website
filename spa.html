@@ -35,7 +35,6 @@
   </section>
 
   <section class="spa-tabs">
-
     <div class="tab-container">
       <div class="tab">
         <button class="tablinks" onclick="openService(event, 'Massages')" id="defaultOpen">Massages</button>
@@ -46,59 +45,125 @@
         <button class="tablinks" onclick="openService(event, 'Wellness')">Wellness Programs</button>
         <button class="tablinks" onclick="openService(event, 'Notes')">Important Notes</button>
       </div>
+
       <div class="tab-content-area">
         <div id="Massages" class="tabcontent">
-          <h3>Massages</h3>
-          <p>Shangri La Signature Massage (90 min): $250 – A customized blend for deep relaxation.</p>
-          <small>A customized massage using a blend of techniques to release tension and promote deep relaxation.</small>
-          <p>Deep Tissue (60/90 min): $180 / $260 – For chronic tension and pain.</p>
-          <small>A customized massage using a blend of techniques to release tension and promote deep relaxation.</small>
-          <p>Hot Stone (75 min): $220 – Warm basalt stones soothe and improve circulation.</p>
-          <p>...（你可以继续补充更多）</p>
+          <div class="massage-content">
+            <h3><span><img src="assets/spa/icons/massage.png" alt="Massage Logo" width="50" height="50"></span> Massages</h3>
+            <p><strong>1. Shangri La Signature Massage (90 min): <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>250</strong></p>
+            <small>A customized massage using a blend of techniques to release tension and promote deep relaxation.</small>
+            <p><strong>2. Deep Tissue Massage (60 minutes / 90 minutes): <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>180 / 260</strong></p>
+            <small>Targeted massage to relieve chronic muscle tension and pain.</small>
+            <p><strong>3. Hot Stone Massage (75 minutes):  <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>220</strong></p>
+            <small>Soothing massage using warm basalt stones to melt away stress and improve circulation.</small>
+            <p><strong>4. Aromatherapy Massage (60 minutes):  <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>190</strong></p>
+            <small>Relaxing massage using essential oils to enhance mood and well-being.</small>
+            <p><strong>5. Swedish Massage (60 minutes / 90 minutes):  <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>170 /240</strong></p>
+            <small>A classic relaxation massage.</small>
+            <p><strong>5. Couples Massage (60 Minutes):  <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>350 (per couple)</strong></p>
+            <small>Relax with a partner in a private room.</small>
+          </div>
+
+          <div class="massage-price">
+            <img src="assets/spa/massage.png" alt="Massage price">
+          </div>
+
         </div>
-  
+
+
         <div id="Facials" class="tabcontent">
-          <h3>Facials</h3>
-          <p>Radiance Facial (75 min): $210 – Tailored to your skin type, glow guaranteed.</p>
-          <p>Hydrating Facial (60 min): $180 – Deep nourishment and moisture boost.</p>
-          <p>...（更多内容）</p>
+          <div class="massage-content">
+            <h3><span><img src="assets/spa/icons/face-massage.png" alt="Massage Logo" width="50" height="50"></span> Massages</h3>
+            <p><strong>1. Shangri La Radiance Facial (75 min): <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>210</strong></p>
+            <small>A luxurious facial tailored to your skin type, leaving your complexion glowing.</small>
+            <p><strong>2. Hydrating Facial (60 minutes): <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>180</strong></p>
+            <small>Deeply nourishing facial to replenish moisture and restore skin's vitality.</small>
+            <p><strong>3. Anti-Aging Facial  (90 minutes):  <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>270</strong></p>
+            <small>Advanced facial treatment to reduce fine lines and wrinkles.</small>
+            <p><strong>4. Purifying Facial  (60 minutes):  <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>160</strong></p>
+            <small>Cleansing facial designed to remove impurities and leave a fresh feeling.</small>
+          </div>
+
+          <div class="massage-price">
+            <img src="assets/spa/facial.png" alt="Facial price">
+          </div>
         </div>
   
         <div id="Body" class="tabcontent">
-          <h3>Body Treatments</h3>
-          <p>Sea Salt Scrub (45 min): $150 – Exfoliates and refreshes skin.</p>
-          <p>Tropical Wrap (60 min): $200 – Deep hydration with natural ingredients.</p>
-          <p>...（更多内容）</p>
+          <div class="massage-content">
+            <h3><span><img src="assets/spa/icons/treatment.png" alt="Massage Logo" width="50" height="50"></span> Body Treatments</h3>
+            <p><strong>1. Sea Salt Body Scrub (45 min): <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>150</strong></p>
+            <small>Exfoliating treatment to remove dead skin cells and reveal smoother skin.</small>
+            <p><strong>2. Tropical Body Wrap (60 minutes): <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>200</strong></p>
+            <small>Hydrating and nourishing body wrap using natural ingredients.</small>
+            <p><strong>3.Sun Relief Wrap (60 minutes):  <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>270</strong></p>
+            <small>Soothing treatment to cool and hydrate skin after sun exposure.</small>
+          </div>
+
+          <div class="massage-price">
+            <img src="assets/spa/body.png" alt="Facial price">
+          </div>
         </div>
   
         <div id="Nails" class="tabcontent">
-          <h3>Manicures & Pedicures</h3>
-          <p>Deluxe Manicure: $90 | Classic Pedicure: $90</p>
+          <div class="massage-content">
+            <h3><span><img src="assets/spa/icons/nail-polish.png" alt="Massage Logo" width="50" height="50"></span> Manicures & Pedicures</h3>
+            <p><strong>1. Shangri La Deluxe Manicure (60 minutes): <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>90</strong></p>
+            
+            <p><strong>2. Shangri La Deluxe Pedicure (75 minutes):  <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>110</strong></p>
+            
+            <p><strong>3.Classic Manicure (45 minutes): <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>70</strong></p>
+
+            <p><strong>4. Classic Pedicure (60 minutes):  <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>90</strong></p>
+            
+          </div>
+          <div class="massage-price">
+            <img src="assets/spa/Manicures.png" alt="Facial price" width="200">
+          </div>
         </div>
   
         <div id="Enhancements" class="tabcontent">
-          <h3>Enhancements</h3>
-          <p>Scalp Massage (15 min): $40 | Eye Treatment: $35 | Reflexology: $40</p>
+          <div class="massage-content">
+            <h3><span><img src="assets/spa/icons/eye-patch.png" alt="Massage Logo" width="50" height="50"></span> Manicures & Pedicures</h3>
+            <p><strong>1. Scalp Massage (15 minutes):  <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>40</strong></p>
+            
+            <p><strong>2. Eye Treatment (15 minutes):   <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>35</strong></p>
+            
+            <p><strong>3. Foot Reflexology (15 minutes): <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>40</strong></p>
+
+          </div>
+          <div class="massage-price">
+            <img src="assets/spa/enhancement.png" alt="Facial price" width="200">
+          </div>
         </div>
   
         <div id="Wellness" class="tabcontent">
-          <h3>Wellness Programs</h3>
-          <p>Yoga (Group): $50 | Private: $120<br>Meditation: $40 (Group) / $100 (Private)</p>
+          <div class="massage-content">
+            <h3><span><img src="assets/spa/icons/meditation.png" alt="Massage Logo" width="50" height="50"></span> Wellness Programs</h3>
+            <p><strong>1. Yoga Session (60 minutes): :  <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>50 (Group),120 (Private)</strong></p>
+            
+            <p><strong>2. Meditation Session (30 minutes):  <span><img src="assets/spa/money-bags.png" alt="Money icon" width="25" height="25"></span>40 (Group),100 (Private) </strong></p>
+
+          </div>
+          <div class="massage-price">
+            <img src="assets/spa/wellness.png" alt="Facial price" width="200">
+          </div>
         </div>
   
         <div id="Notes" class="tabcontent">
-          <h3>Important Notes</h3>
+          <h3><span><img src="assets/spa/icons/warning.png" alt="Massage Logo" width="50" height="50"></span> Important Notes</h3>
           <ul>
-            <li>Please arrive 15 minutes early.</li>
-            <li>24-hour cancellation policy applies.</li>
+            <li>Prices are subject to change without notice.</li>
+            <li>Reservations are highly recommended.</li>
+            <li>Please arrive 15 minutes prior to your scheduled appointment.</li>
+            <li>A 24-hour cancellation policy applies.</li>
             <li>Gratuity not included.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-  
-  
+
 
 <footer class="footer">
   <div class="section__container footer__container">

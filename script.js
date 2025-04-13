@@ -13,18 +13,26 @@ const swiper = new Swiper('.swiper', {
   speed: 800
 })
 
-window.addEventListener('DOMContentLoaded', ()=>{
-  fetch('nav.html')
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById('nav-placeholder').innerHTML = data
-  });
-  fetch('footer.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('footer-placeholder').innerHTML = data;
-  });
-  console.log("JS loaded, attempting to inject nav and footer...");
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.nav');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('open');
+});
+
+const testimonial_swiper = new Swiper('.testimonial-swiper', {
+  loop: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: '.testimonial-nav-next',
+    preEl: '.testimonial-nav-pre'
+  },
+  slidePerView: 1,
+  spaceBetween: 30,
+  speed: 800
 })
 
 

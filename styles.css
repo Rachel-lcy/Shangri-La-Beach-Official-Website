@@ -628,7 +628,7 @@ color: #fdfaf5;
 }
 .activity-topbar {
   height: 500px;
-  background-image: url('../assets/activities/beach-swing.jpg');
+  background-image: url('assets/activities/beach-swing.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -720,7 +720,7 @@ color: #fdfaf5;
 /* Rooms CSS */
 .rooms {
   height: 500px;
-  background-image: url('../assets/rooms/room-door.jpg');
+  background-image: url('assets/rooms/room-door.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -823,7 +823,7 @@ color: #fdfaf5;
 /* Spa */
 .spa {
   height: 500px;
-  background-image: url('../assets/spa/spa-service.jpg');
+  background-image: url('assets/spa/spa-service.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -910,7 +910,7 @@ color: #fdfaf5;
 /* Dinning  */
 .dinner {
   height: 500px;
-  background-image: url('../assets/dinning/dinner.jpg');
+  background-image: url('assets/dinning/dinner.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
